@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import { Button } from "@/components/ui/button";
 import { Shield, Check, ChevronDown } from "lucide-react";
@@ -82,7 +83,7 @@ const Hero = () => {
                 className="w-full h-full absolute inset-0 bg-cover bg-center opacity-40 rounded-lg"
                 style={{ backgroundImage: "url('/lovable-uploads/7cd812ae-3708-4ad7-90f6-71007ec36c73.png')" }}
               ></div>
-              <div className="bg-transparent backdrop-blur-sm p-4 md:p-5 rounded-t-none rounded-b-lg w-full absolute bottom-0 left-0 right-0 z-10 border-t border-white/30">
+              <div className="bg-agr-teal bg-opacity-90 backdrop-blur-sm p-4 md:p-5 rounded-t-none rounded-b-lg w-full absolute bottom-0 left-0 right-0 z-10 border-t border-white/30">
                 <div className="flex flex-col sm:flex-row items-center justify-between">
                   <div className="mb-3 sm:mb-0">
                     <h3 className="text-lg font-semibold text-white">Ready to get protected?</h3>
