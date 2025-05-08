@@ -1,5 +1,4 @@
-
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Button } from "@/components/ui/button";
 import { Shield, Check, ChevronDown } from "lucide-react";
 import {
@@ -12,6 +11,21 @@ import {
 
 const Hero = () => {
   const [selectedState, setSelectedState] = useState<string>("");
+  const [headingIndex, setHeadingIndex] = useState(0);
+  
+  const headings = [
+    "Managing Risk for Employer Benefits",
+    "Empowering Employee Benefits",
+    "Transforming Health Insurance"
+  ];
+  
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setHeadingIndex((prevIndex) => (prevIndex + 1) % headings.length);
+    }, 3000); // Change every 3 seconds
+    
+    return () => clearInterval(interval);
+  }, []);
 
   const states = [
     "Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut", 
@@ -35,7 +49,8 @@ const Hero = () => {
               </div>
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-agr-navy mb-6">
-              Secure Your Future With Confidence
+              <span className="block min-h-[3.5rem]">{headings[headingIndex]}</span>
+              <span className="text-agr-blue">in the Digital Age</span>
             </h1>
             <p className="text-lg md:text-xl text-gray-600 mb-8">
               American Global Re delivers advanced, customized insurance solutions that go beyond traditional coverage — because health insurance wasn't built to cover it all. We don't just respond to change — we drive it.
