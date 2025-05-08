@@ -1,8 +1,28 @@
-import React from 'react';
+
+import React, { useState } from 'react';
 import { Button } from "@/components/ui/button";
-import { Shield, Check } from "lucide-react";
+import { Shield, Check, ChevronDown } from "lucide-react";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 
 const Hero = () => {
+  const [selectedState, setSelectedState] = useState<string>("");
+
+  const states = [
+    "Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut", 
+    "Delaware", "Florida", "Georgia", "Hawaii", "Idaho", "Illinois", "Indiana", "Iowa", 
+    "Kansas", "Kentucky", "Louisiana", "Maine", "Maryland", "Massachusetts", "Michigan", 
+    "Minnesota", "Mississippi", "Missouri", "Montana", "Nebraska", "Nevada", "New Hampshire", 
+    "New Jersey", "New Mexico", "New York", "North Carolina", "North Dakota", "Ohio", "Oklahoma", 
+    "Oregon", "Pennsylvania", "Rhode Island", "South Carolina", "South Dakota", "Tennessee", 
+    "Texas", "Utah", "Vermont", "Virginia", "Washington", "West Virginia", "Wisconsin", "Wyoming"
+  ];
+
   return (
     <section className="bg-gradient-to-b from-agr-lightblue to-white">
       <div className="container-custom py-16 md:py-24">
@@ -45,13 +65,26 @@ const Hero = () => {
             <div className="absolute inset-0 bg-agr-navy/10 rounded-lg overflow-hidden flex items-center justify-center">
               <div className="bg-white p-6 md:p-8 rounded-lg shadow-lg w-5/6 max-w-md">
                 <h3 className="text-xl font-semibold text-agr-navy mb-4">Ready to get protected?</h3>
-                <p className="text-gray-600 mb-6">Enter your ZIP code to get started with a personalized quote.</p>
+                <p className="text-gray-600 mb-6">Select your state to get started with a personalized quote.</p>
                 <div className="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-3">
-                  <input
-                    type="text"
-                    placeholder="Enter ZIP Code"
-                    className="flex-1 px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-agr-blue"
-                  />
+                  <div className="flex-1">
+                    <Select value={selectedState} onValueChange={setSelectedState}>
+                      <SelectTrigger className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-agr-blue">
+                        <div className="flex items-center">
+                          <span className="text-sm text-gray-500 font-medium">State</span>
+                          {selectedState && <span className="ml-1 text-base font-medium text-gray-800">{selectedState}</span>}
+                          {!selectedState && <SelectValue placeholder="Select a state" />}
+                        </div>
+                      </SelectTrigger>
+                      <SelectContent className="max-h-80 overflow-y-auto">
+                        {states.map((state) => (
+                          <SelectItem key={state} value={state}>
+                            {state}
+                          </SelectItem>
+                        ))}
+                      </SelectContent>
+                    </Select>
+                  </div>
                   <Button className="btn-primary whitespace-nowrap">Go</Button>
                 </div>
               </div>
