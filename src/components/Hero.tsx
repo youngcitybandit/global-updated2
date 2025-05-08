@@ -19,7 +19,7 @@ const Hero = () => {
               Secure Your Future With Confidence
             </h1>
             <p className="text-lg md:text-xl text-gray-600 mb-8">
-              American GlobaleRe provides customized insurance solutions to protect what matters most to you. Get coverage that gives you peace of mind.
+              American Global Re delivers advanced, customized insurance solutions that go beyond traditional coverage — because health insurance wasn't built to cover it all. We don't just respond to change — we drive it.
             </p>
             
             <div className="space-y-3 mb-8">
