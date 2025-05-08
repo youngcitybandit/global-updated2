@@ -8,10 +8,6 @@ const Footer = () => {
       <div className="container-custom pt-12 pb-6">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
-            <div className="flex items-center mb-4">
-              <span className="text-xl font-bold text-white mr-1">American</span>
-              <span className="text-xl font-bold text-agr-teal">GlobaleRe</span>
-            </div>
             <p className="text-gray-300 mb-6">
               Providing trusted insurance solutions for over 30 years. We're committed to protecting what matters most to you.
             </p>
