@@ -9,8 +9,8 @@ const Footer = () => {
           <div>
             <div className="mb-6">
               <img 
-                src="/lovable-uploads/ca1681fd-0076-436c-a007-7ef7f9ca7872.png" 
-                alt="AGR Insurance" 
+                src="/lovable-uploads/cae8698b-566c-4e49-82b7-60bfed41fa2d.png" 
+                alt="AmericanGlobalRe" 
                 className="h-16 mb-4"
               />
               <p className="text-gray-300">
