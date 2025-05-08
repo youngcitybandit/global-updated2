@@ -43,14 +43,14 @@ const CoverageSection = () => {
   ];
 
   return (
-    <section id="coverage" className="section-padding bg-gradient-to-b from-[#061a2c] to-[#072442] text-white">
+    <section id="coverage" className="section-padding bg-white text-agr-navy">
       <div className="container-custom">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-5xl font-bold mb-4">
-            <span className="text-[#1ceef5]">Indemnity Insurance Providing Cash Benefit Solutions</span>
-            <span className="text-white"> for Your Workforce</span>
+            <span className="text-agr-blue">Indemnity Insurance Providing Cash Benefit Solutions</span>
+            <span className="text-agr-navy"> for Your Workforce</span>
           </h2>
-          <p className="text-lg text-white/80 max-w-3xl mx-auto">
+          <p className="text-lg text-agr-darkgray max-w-3xl mx-auto">
             Enhance your existing benefits program with American Global's employee cash benefits coverage.
           </p>
         </div>
@@ -61,12 +61,12 @@ const CoverageSection = () => {
               key={item.id} 
               className="rounded-lg overflow-hidden shadow-lg flex flex-col"
             >
-              <div className="bg-gradient-to-r from-blue-500 to-blue-700 p-6 flex justify-center items-center">
+              <div className="bg-gradient-to-r from-agr-blue to-blue-700 p-6 flex justify-center items-center">
                 {item.icon}
               </div>
-              <div className="bg-[#1a2c3f] p-6 flex-grow">
-                <h3 className="text-xl font-bold text-white mb-3">{item.title}</h3>
-                <p className="text-white/70">{item.description}</p>
+              <div className="bg-white border border-gray-100 p-6 flex-grow">
+                <h3 className="text-xl font-bold text-agr-navy mb-3">{item.title}</h3>
+                <p className="text-agr-darkgray">{item.description}</p>
               </div>
             </div>
           ))}
