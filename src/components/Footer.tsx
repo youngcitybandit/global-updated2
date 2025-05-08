@@ -9,6 +9,7 @@ const Footer = () => {
       <div className="container-custom pt-12 pb-6">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
+            <h3 className="text-lg font-semibold mb-4 invisible md:visible">Logo</h3>
             <div className="mb-6">
               <div className="w-56 mb-4">
                 <AspectRatio ratio={3/1}>
