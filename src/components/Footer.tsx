@@ -1,5 +1,6 @@
 import React from 'react';
 import { Facebook, Twitter, Instagram, Linkedin, Mail, Phone } from 'lucide-react';
+import { AspectRatio } from "@/components/ui/aspect-ratio";
 
 const Footer = () => {
   return (
@@ -8,11 +9,15 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
             <div className="mb-6">
-              <img 
-                src="/lovable-uploads/cae8698b-566c-4e49-82b7-60bfed41fa2d.png" 
-                alt="AmericanGlobalRe" 
-                className="h-16 mb-4"
-              />
+              <div className="w-56 mb-4">
+                <AspectRatio ratio={3/1}>
+                  <img 
+                    src="/lovable-uploads/cae8698b-566c-4e49-82b7-60bfed41fa2d.png" 
+                    alt="AmericanGlobalRe" 
+                    className="object-contain w-full h-full"
+                  />
+                </AspectRatio>
+              </div>
               <p className="text-gray-300">
                 Providing trusted insurance solutions for over 30 years. We're committed to protecting what matters most to you.
               </p>
