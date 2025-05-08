@@ -42,7 +42,7 @@ const QuoteForm = () => {
                 <div>
                   <h3 className="font-semibold text-agr-navy mb-1">Call Us Directly</h3>
                   <p className="text-gray-600">
-                    Prefer to talk now? Call us at <a href="tel:1-800-555-1234" className="text-agr-blue font-medium">1-800-555-1234</a>
+                    Prefer to talk now? Call us at <a href="tel:1-877-828-9970" className="text-agr-blue font-medium">1-877-828-9970</a>
                   </p>
                 </div>
               </div>

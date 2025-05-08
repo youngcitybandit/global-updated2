@@ -124,9 +124,9 @@ const Navbar = () => {
 
           {/* Call Now Button (Desktop) */}
           <div className="hidden md:flex items-center">
-            <a href="tel:1-800-555-1234" className="flex items-center text-agr-navy text-sm font-bold whitespace-nowrap">
+            <a href="tel:1-877-828-9970" className="flex items-center text-agr-navy text-sm font-bold whitespace-nowrap">
               <Phone size={18} className="mr-2 text-agr-blue" />
-              1-800-555-1234
+              1-877-828-9970
             </a>
             <Button className="btn-primary ml-6 text-base font-medium">Get a Quote</Button>
           </div>
@@ -179,9 +179,9 @@ const Navbar = () => {
                 </div>
               </div>
             </nav>
-            <a href="tel:1-800-555-1234" className="flex items-center text-agr-navy text-sm font-bold py-2 mb-3">
+            <a href="tel:1-877-828-9970" className="flex items-center text-agr-navy text-sm font-bold py-2 mb-3">
               <Phone size={18} className="mr-2 text-agr-blue" />
-              1-800-555-1234
+              1-877-828-9970
             </a>
             <Button className="btn-primary w-full text-base font-medium">Get a Quote</Button>
           </div>

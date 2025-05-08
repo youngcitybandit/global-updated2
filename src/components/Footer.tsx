@@ -56,14 +56,14 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Contact</h3>
             <div className="space-y-3 text-gray-300">
-              <p>123 Insurance Way<br />New York, NY 10001</p>
+              <p>6060 North Central Expressway,<br />Suite 500, Dallas, TX 75206</p>
               <p className="flex items-center">
                 <Phone size={16} className="mr-2" />
-                <a href="tel:1-800-555-1234" className="hover:text-white transition-colors">1-800-555-1234</a>
+                <a href="tel:1-877-828-9970" className="hover:text-white transition-colors">1-877-828-9970</a>
               </p>
               <p className="flex items-center">
                 <Mail size={16} className="mr-2" />
-                <a href="mailto:info@americanglobalere.com" className="hover:text-white transition-colors">info@americanglobalere.com</a>
+                <a href="mailto:info@agreinsure.com" className="hover:text-white transition-colors">info@agreinsure.com</a>
               </p>
             </div>
           </div>
