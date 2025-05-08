@@ -67,13 +67,15 @@ const Hero = () => {
                 className="w-full h-full absolute inset-0 bg-cover bg-center opacity-40 rounded-lg"
                 style={{ backgroundImage: "url('/lovable-uploads/7cd812ae-3708-4ad7-90f6-71007ec36c73.png')" }}
               ></div>
-              <div className="bg-transparent backdrop-blur-sm p-6 md:p-8 rounded-lg shadow-lg w-5/6 max-w-md absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-0 z-10 border border-white/30">
-                <h3 className="text-xl font-semibold text-white mb-4">Ready to get protected?</h3>
-                <p className="text-white/80 mb-6">Select your state to get started with a personalized quote.</p>
-                <div className="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-3">
-                  <div className="flex-1">
+              <div className="bg-transparent backdrop-blur-sm p-4 md:p-5 rounded-t-none rounded-b-lg w-full absolute bottom-0 left-0 right-0 z-10 border-t border-white/30">
+                <div className="flex flex-col sm:flex-row items-center justify-between">
+                  <div className="mb-3 sm:mb-0">
+                    <h3 className="text-lg font-semibold text-white">Ready to get protected?</h3>
+                    <p className="text-white/80 text-sm">Select your state for a personalized quote</p>
+                  </div>
+                  <div className="flex w-full sm:w-auto space-x-2">
                     <Select value={selectedState} onValueChange={setSelectedState}>
-                      <SelectTrigger className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-agr-blue">
+                      <SelectTrigger className="w-full sm:w-[180px] border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-agr-blue">
                         <SelectValue placeholder="Select a state" />
                       </SelectTrigger>
                       <SelectContent className="max-h-80 overflow-y-auto">
@@ -84,8 +86,8 @@ const Hero = () => {
                         ))}
                       </SelectContent>
                     </Select>
+                    <Button className="btn-primary whitespace-nowrap">Go</Button>
                   </div>
-                  <Button className="btn-primary whitespace-nowrap">Go</Button>
                 </div>
               </div>
             </div>
