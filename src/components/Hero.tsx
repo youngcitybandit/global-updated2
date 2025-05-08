@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { Shield, Check, ChevronDown } from "lucide-react";
@@ -74,11 +73,7 @@ const Hero = () => {
                   <div className="flex-1">
                     <Select value={selectedState} onValueChange={setSelectedState}>
                       <SelectTrigger className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-agr-blue">
-                        <div className="flex items-center">
-                          <span className="text-sm text-gray-500 font-medium">State</span>
-                          {selectedState && <span className="ml-1 text-base font-medium text-gray-800">{selectedState}</span>}
-                          {!selectedState && <SelectValue placeholder="Select a state" />}
-                        </div>
+                        <SelectValue placeholder="Select a state" />
                       </SelectTrigger>
                       <SelectContent className="max-h-80 overflow-y-auto">
                         {states.map((state) => (
