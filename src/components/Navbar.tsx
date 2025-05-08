@@ -87,7 +87,7 @@ const Navbar = () => {
 
                 {/* Regular Menu Items */}
                 <NavigationMenuItem>
-                  <a href="#solutions" className="text-agr-darkgray hover:text-agr-blue text-base font-medium px-3 py-2">Solutions</a>
+                  <a href="#products" className="text-agr-darkgray hover:text-agr-blue text-base font-medium px-3 py-2">Solutions</a>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
                   <a href="#coverage" className="text-agr-darkgray hover:text-agr-blue text-base font-medium px-3 py-2">Coverage</a>
@@ -162,8 +162,8 @@ const Navbar = () => {
                 </div>
               </div>
 
-              <a href="#solutions" className="text-agr-darkgray hover:text-agr-blue text-base font-medium py-2">Solutions</a>
-              <a href="#coverage" className="text-agr-darkgray hover:text-agr-blue text-base font-medium py-2">Coverage</a>
+              <a href="#products" className="block text-agr-darkgray hover:text-agr-blue text-base font-medium py-2">Solutions</a>
+              <a href="#coverage" className="block text-agr-darkgray hover:text-agr-blue text-base font-medium py-2">Coverage</a>
 
               <div>
                 <button onClick={() => {}} className="flex items-center justify-between w-full text-agr-darkgray text-base font-medium py-2">
