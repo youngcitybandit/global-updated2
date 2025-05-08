@@ -63,7 +63,11 @@ const Hero = () => {
           </div>
           <div className="relative h-full min-h-[300px] md:min-h-[400px]">
             <div className="absolute inset-0 bg-agr-navy/10 rounded-lg overflow-hidden flex items-center justify-center">
-              <div className="bg-white p-6 md:p-8 rounded-lg shadow-lg w-5/6 max-w-md">
+              <div 
+                className="w-full h-full absolute inset-0 bg-cover bg-center opacity-40 rounded-lg"
+                style={{ backgroundImage: "url('/lovable-uploads/91573310-07a9-4636-9f05-83e11f7451f6.png')" }}
+              ></div>
+              <div className="bg-white/95 backdrop-blur-sm p-6 md:p-8 rounded-lg shadow-lg w-5/6 max-w-md relative z-10">
                 <h3 className="text-xl font-semibold text-agr-navy mb-4">Ready to get protected?</h3>
                 <p className="text-gray-600 mb-6">Select your state to get started with a personalized quote.</p>
                 <div className="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-3">
