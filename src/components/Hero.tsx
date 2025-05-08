@@ -25,15 +25,15 @@ const Hero = () => {
             <div className="space-y-3 mb-8">
               <div className="flex items-center">
                 <Check className="text-agr-blue mr-3" />
-                <span className="text-gray-700">No medical exam options available</span>
+                <span className="text-gray-700">Customized Insurance Solutions</span>
               </div>
               <div className="flex items-center">
                 <Check className="text-agr-blue mr-3" />
-                <span className="text-gray-700">Rates starting at $9.95 per month</span>
+                <span className="text-gray-700">Innovative Risk Management</span>
               </div>
               <div className="flex items-center">
                 <Check className="text-agr-blue mr-3" />
-                <span className="text-gray-700">Fast and easy application process</span>
+                <span className="text-gray-700">World-Class Service</span>
               </div>
             </div>
             
