@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import { Button } from "@/components/ui/button";
 import { Shield, Check, ChevronDown } from "lucide-react";
@@ -85,7 +86,7 @@ const Hero = () => {
               <div className="bg-transparent backdrop-blur-sm p-4 md:p-5 rounded-t-none rounded-b-lg w-full absolute bottom-0 left-0 right-0 z-10 border-t border-white/30">
                 <div className="flex flex-col sm:flex-row items-center justify-between">
                   <div className="mb-3 sm:mb-0">
-                    <h3 className="text-lg font-semibold text-white">Ready to get protected?</h3>
+                    <h3 className="text-lg font-semibold text-agr-navy">Ready to get protected?</h3>
                     <p className="text-white/80 text-sm">Select your state for a personalized quote</p>
                   </div>
                   <div className="flex w-full sm:w-auto space-x-2">
