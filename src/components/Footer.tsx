@@ -11,7 +11,7 @@ const Footer = () => {
               <img 
                 src="/lovable-uploads/ca1681fd-0076-436c-a007-7ef7f9ca7872.png" 
                 alt="AGR Insurance" 
-                className="h-8 mb-4"
+                className="h-16 mb-4"
               />
               <p className="text-gray-300">
                 Providing trusted insurance solutions for over 30 years. We're committed to protecting what matters most to you.
