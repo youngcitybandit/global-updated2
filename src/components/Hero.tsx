@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { Shield, Check } from "lucide-react";
@@ -12,7 +11,7 @@ const Hero = () => {
             <div className="mb-2 inline-block">
               <div className="flex items-center bg-white px-4 py-1 rounded-full shadow-sm text-agr-navy">
                 <Shield size={16} className="mr-2 text-agr-blue" />
-                <span className="text-sm font-medium">Trusted Insurance Protection</span>
+                <span className="text-sm font-medium">Trusted Insurance Indemnity Protection</span>
               </div>
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-agr-navy mb-6">
