@@ -1,7 +1,6 @@
 
 import React from 'react';
 import { Heart, Briefcase, Users, Shield, Ribbon } from "lucide-react";
-import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 
 const ProductSection = () => {
@@ -63,10 +62,6 @@ const ProductSection = () => {
               <p className="text-gray-600">{product.description}</p>
             </Card>
           ))}
-        </div>
-        
-        <div className="mt-12 text-center">
-          <Button className="btn-primary">View All Insurance Products</Button>
         </div>
       </div>
     </section>
