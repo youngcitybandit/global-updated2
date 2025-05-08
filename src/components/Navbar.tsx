@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { Menu, X, Phone, ChevronDown } from "lucide-react";
@@ -25,8 +26,11 @@ const Navbar = () => {
           {/* Logo */}
           <div className="flex items-center">
             <a href="/" className="flex items-center">
-              <span className="text-2xl font-bold text-agr-navy mr-2">American</span>
-              <span className="text-2xl font-bold text-agr-blue">GlobaleRe</span>
+              <img 
+                src="/lovable-uploads/ed580215-06f6-49c1-915b-56d58ac5487a.png" 
+                alt="AmericanGlobalRe Logo" 
+                className="h-8 md:h-10"
+              />
             </a>
           </div>
 
