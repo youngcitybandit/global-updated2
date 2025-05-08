@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <footer className="bg-agr-navy text-white">
       <div className="container-custom pt-12 pb-6">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <div>
             <div className="mb-6">
               <div className="w-56 mb-4">
@@ -37,17 +37,6 @@ const Footer = () => {
                 <Linkedin size={18} />
               </a>
             </div>
-          </div>
-          
-          <div>
-            <h3 className="text-lg font-semibold mb-4">Products</h3>
-            <ul className="space-y-2">
-              <li><a href="#" className="text-gray-300 hover:text-agr-teal transition-colors">Life Insurance</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-agr-teal transition-colors">Home Insurance</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-agr-teal transition-colors">Auto Insurance</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-agr-teal transition-colors">Business Insurance</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-agr-teal transition-colors">Specialty Coverage</a></li>
-            </ul>
           </div>
           
           <div>
