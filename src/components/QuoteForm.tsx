@@ -2,13 +2,6 @@
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { Clock, Mail, Phone, ShieldCheck } from "lucide-react";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
 
 const QuoteForm = () => {
   return (
@@ -104,21 +97,6 @@ const QuoteForm = () => {
                   id="zipCode"
                   className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-agr-blue"
                 />
-              </div>
-              
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1">Insurance Type</label>
-                <Select>
-                  <SelectTrigger className="w-full">
-                    <SelectValue placeholder="Select Insurance Type" />
-                  </SelectTrigger>
-                  <SelectContent>
-                    <SelectItem value="life">Life Insurance</SelectItem>
-                    <SelectItem value="home">Home Insurance</SelectItem>
-                    <SelectItem value="auto">Auto Insurance</SelectItem>
-                    <SelectItem value="business">Business Insurance</SelectItem>
-                  </SelectContent>
-                </Select>
               </div>
               
               <div className="pt-2">
