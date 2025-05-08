@@ -87,7 +87,7 @@ const Hero = () => {
                 <div className="flex flex-col sm:flex-row items-center justify-between">
                   <div className="mb-3 sm:mb-0">
                     <h3 className="text-lg font-semibold text-agr-navy">Ready to get protected?</h3>
-                    <p className="text-sm text-agr-blue">Select your state for a personalized quote</p>
+                    <p className="text-sm text-agr-navy">Select your state for a personalized quote</p>
                   </div>
                   <div className="flex w-full sm:w-auto space-x-2">
                     <Select value={selectedState} onValueChange={setSelectedState}>
