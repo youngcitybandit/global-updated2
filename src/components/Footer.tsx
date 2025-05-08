@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Facebook, Twitter, Instagram, Linkedin, Mail, Phone } from 'lucide-react';
 
@@ -8,9 +7,16 @@ const Footer = () => {
       <div className="container-custom pt-12 pb-6">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
-            <p className="text-gray-300 mb-6">
-              Providing trusted insurance solutions for over 30 years. We're committed to protecting what matters most to you.
-            </p>
+            <div className="mb-6">
+              <img 
+                src="/lovable-uploads/ca1681fd-0076-436c-a007-7ef7f9ca7872.png" 
+                alt="AGR Insurance" 
+                className="h-8 mb-4"
+              />
+              <p className="text-gray-300">
+                Providing trusted insurance solutions for over 30 years. We're committed to protecting what matters most to you.
+              </p>
+            </div>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-300 hover:text-agr-teal transition-colors">
                 <Facebook size={18} />
