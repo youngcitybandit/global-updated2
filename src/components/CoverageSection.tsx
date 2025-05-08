@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Hospital, EmergencyRoom, Ambulance, Surgical, Anesthesia, Wellness } from "lucide-react";
+import { Hospital, MedicalCross, Ambulance, Stethoscope, FirstAid, HeartPulse } from "lucide-react";
 
 const CoverageSection = () => {
   const coverageItems = [
@@ -14,7 +14,7 @@ const CoverageSection = () => {
       id: 2,
       title: "Emergency Room",
       description: "Coverage for unexpected medical emergencies",
-      icon: <EmergencyRoom className="w-12 h-12 text-white" />
+      icon: <MedicalCross className="w-12 h-12 text-white" />
     },
     {
       id: 3,
@@ -26,19 +26,19 @@ const CoverageSection = () => {
       id: 4,
       title: "Surgical",
       description: "Financial support for surgical procedures",
-      icon: <Surgical className="w-12 h-12 text-white" />
+      icon: <Stethoscope className="w-12 h-12 text-white" />
     },
     {
       id: 5,
       title: "Anesthesia",
       description: "Coverage for anesthesia-related expenses",
-      icon: <Anesthesia className="w-12 h-12 text-white" />
+      icon: <FirstAid className="w-12 h-12 text-white" />
     },
     {
       id: 6,
       title: "Wellness",
       description: "Support for preventative care and wellness",
-      icon: <Wellness className="w-12 h-12 text-white" />
+      icon: <HeartPulse className="w-12 h-12 text-white" />
     }
   ];
 
