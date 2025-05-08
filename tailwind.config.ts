@@ -64,6 +64,7 @@ export default {
           lightblue: '#E6F1FF',
           gray: '#F5F7FA',
           darkgray: '#333333',
+          teal: '#64EECD', // Adding the new teal accent color
         }
       },
       borderRadius: {

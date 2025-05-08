@@ -10,22 +10,22 @@ const Footer = () => {
           <div>
             <div className="flex items-center mb-4">
               <span className="text-xl font-bold text-white mr-1">American</span>
-              <span className="text-xl font-bold text-agr-blue">GlobaleRe</span>
+              <span className="text-xl font-bold text-agr-teal">GlobaleRe</span>
             </div>
             <p className="text-gray-300 mb-6">
               Providing trusted insurance solutions for over 30 years. We're committed to protecting what matters most to you.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-300 hover:text-white transition-colors">
+              <a href="#" className="text-gray-300 hover:text-agr-teal transition-colors">
                 <Facebook size={18} />
               </a>
-              <a href="#" className="text-gray-300 hover:text-white transition-colors">
+              <a href="#" className="text-gray-300 hover:text-agr-teal transition-colors">
                 <Twitter size={18} />
               </a>
-              <a href="#" className="text-gray-300 hover:text-white transition-colors">
+              <a href="#" className="text-gray-300 hover:text-agr-teal transition-colors">
                 <Instagram size={18} />
               </a>
-              <a href="#" className="text-gray-300 hover:text-white transition-colors">
+              <a href="#" className="text-gray-300 hover:text-agr-teal transition-colors">
                 <Linkedin size={18} />
               </a>
             </div>
@@ -34,22 +34,22 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Products</h3>
             <ul className="space-y-2">
-              <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Life Insurance</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Home Insurance</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Auto Insurance</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Business Insurance</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Specialty Coverage</a></li>
+              <li><a href="#" className="text-gray-300 hover:text-agr-teal transition-colors">Life Insurance</a></li>
+              <li><a href="#" className="text-gray-300 hover:text-agr-teal transition-colors">Home Insurance</a></li>
+              <li><a href="#" className="text-gray-300 hover:text-agr-teal transition-colors">Auto Insurance</a></li>
+              <li><a href="#" className="text-gray-300 hover:text-agr-teal transition-colors">Business Insurance</a></li>
+              <li><a href="#" className="text-gray-300 hover:text-agr-teal transition-colors">Specialty Coverage</a></li>
             </ul>
           </div>
           
           <div>
             <h3 className="text-lg font-semibold mb-4">Company</h3>
             <ul className="space-y-2">
-              <li><a href="#" className="text-gray-300 hover:text-white transition-colors">About Us</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Careers</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Press</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Testimonials</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Contact Us</a></li>
+              <li><a href="#" className="text-gray-300 hover:text-agr-teal transition-colors">About Us</a></li>
+              <li><a href="#" className="text-gray-300 hover:text-agr-teal transition-colors">Careers</a></li>
+              <li><a href="#" className="text-gray-300 hover:text-agr-teal transition-colors">Press</a></li>
+              <li><a href="#" className="text-gray-300 hover:text-agr-teal transition-colors">Testimonials</a></li>
+              <li><a href="#" className="text-gray-300 hover:text-agr-teal transition-colors">Contact Us</a></li>
             </ul>
           </div>
           
@@ -58,12 +58,12 @@ const Footer = () => {
             <div className="space-y-3 text-gray-300">
               <p>6060 North Central Expressway,<br />Suite 500, Dallas, TX 75206</p>
               <p className="flex items-center">
-                <Phone size={16} className="mr-2" />
-                <a href="tel:1-877-828-9970" className="hover:text-white transition-colors">1-877-828-9970</a>
+                <Phone size={16} className="mr-2 text-agr-teal" />
+                <a href="tel:1-877-828-9970" className="hover:text-agr-teal transition-colors">1-877-828-9970</a>
               </p>
               <p className="flex items-center">
-                <Mail size={16} className="mr-2" />
-                <a href="mailto:info@agreinsure.com" className="hover:text-white transition-colors">info@agreinsure.com</a>
+                <Mail size={16} className="mr-2 text-agr-teal" />
+                <a href="mailto:info@agreinsure.com" className="hover:text-agr-teal transition-colors">info@agreinsure.com</a>
               </p>
             </div>
           </div>
@@ -75,10 +75,10 @@ const Footer = () => {
               &copy; {new Date().getFullYear()} American Global Reinsurance Company, Inc. An Allied Insurance Company. All rights reserved.
             </p>
             <div className="flex space-x-6">
-              <a href="#" className="text-gray-400 hover:text-white text-sm transition-colors">Privacy Policy</a>
-              <a href="#" className="text-gray-400 hover:text-white text-sm transition-colors">Terms of Service</a>
-              <a href="#" className="text-gray-400 hover:text-white text-sm transition-colors">Licenses</a>
-              <a href="#" className="text-gray-400 hover:text-white text-sm transition-colors">Sitemap</a>
+              <a href="#" className="text-gray-400 hover:text-agr-teal text-sm transition-colors">Privacy Policy</a>
+              <a href="#" className="text-gray-400 hover:text-agr-teal text-sm transition-colors">Terms of Service</a>
+              <a href="#" className="text-gray-400 hover:text-agr-teal text-sm transition-colors">Licenses</a>
+              <a href="#" className="text-gray-400 hover:text-agr-teal text-sm transition-colors">Sitemap</a>
             </div>
           </div>
         </div>
