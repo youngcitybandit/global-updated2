@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { Shield, Check, ChevronDown } from "lucide-react";
@@ -66,7 +67,7 @@ const Hero = () => {
                 className="w-full h-full absolute inset-0 bg-cover bg-center opacity-40 rounded-lg"
                 style={{ backgroundImage: "url('/lovable-uploads/7cd812ae-3708-4ad7-90f6-71007ec36c73.png')" }}
               ></div>
-              <div className="bg-white/95 backdrop-blur-sm p-6 md:p-8 rounded-lg shadow-lg w-5/6 max-w-md relative z-10">
+              <div className="bg-white/95 backdrop-blur-sm p-6 md:p-8 rounded-lg shadow-lg w-5/6 max-w-md relative z-10 mt-24 sm:mt-32 md:mt-40">
                 <h3 className="text-xl font-semibold text-agr-navy mb-4">Ready to get protected?</h3>
                 <p className="text-gray-600 mb-6">Select your state to get started with a personalized quote.</p>
                 <div className="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-3">
