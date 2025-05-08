@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Button } from "@/components/ui/button";
 import { Shield, Check, ChevronDown } from "lucide-react";
@@ -83,15 +82,15 @@ const Hero = () => {
                 className="w-full h-full absolute inset-0 bg-cover bg-center opacity-40 rounded-lg"
                 style={{ backgroundImage: "url('/lovable-uploads/7cd812ae-3708-4ad7-90f6-71007ec36c73.png')" }}
               ></div>
-              <div className="bg-agr-teal/90 backdrop-blur-sm p-6 rounded-lg w-full absolute bottom-0 left-0 right-0 z-10 shadow-lg transform translate-y-0 hover:translate-y-[-8px] transition-all duration-300 border border-white/30">
+              <div className="bg-transparent backdrop-blur-sm p-4 md:p-5 rounded-t-none rounded-b-lg w-full absolute bottom-0 left-0 right-0 z-10 border-t border-white/30">
                 <div className="flex flex-col sm:flex-row items-center justify-between">
                   <div className="mb-3 sm:mb-0">
-                    <h3 className="text-xl font-bold text-white">Ready to get protected?</h3>
-                    <p className="text-white font-medium">Select your state for a personalized quote</p>
+                    <h3 className="text-lg font-semibold text-white">Ready to get protected?</h3>
+                    <p className="text-white/80 text-sm">Select your state for a personalized quote</p>
                   </div>
                   <div className="flex w-full sm:w-auto space-x-2">
                     <Select value={selectedState} onValueChange={setSelectedState}>
-                      <SelectTrigger className="w-full sm:w-[180px] border-2 border-white bg-white/20 text-white focus:ring-white">
+                      <SelectTrigger className="w-full sm:w-[180px] border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-agr-blue">
                         <SelectValue placeholder="Select a state" />
                       </SelectTrigger>
                       <SelectContent className="max-h-80 overflow-y-auto">
@@ -102,7 +101,7 @@ const Hero = () => {
                         ))}
                       </SelectContent>
                     </Select>
-                    <Button className="bg-white hover:bg-gray-100 text-agr-teal font-bold transition-all">Go</Button>
+                    <Button className="btn-primary whitespace-nowrap">Go</Button>
                   </div>
                 </div>
               </div>
