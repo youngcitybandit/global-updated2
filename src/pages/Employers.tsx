@@ -3,6 +3,7 @@ import React from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import QuoteForm from '../components/QuoteForm';
+import QuoteDialog from '../components/QuoteDialog';
 
 const Employers = () => {
   return (
@@ -19,12 +20,15 @@ const Employers = () => {
                   American Global Re offers comprehensive indemnity insurance coverage solutions designed specifically for employers looking to enhance their employee benefits package.
                 </p>
                 <div className="mt-6">
-                  <a 
-                    href="#contact" 
-                    className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-agr-blue hover:bg-blue-700"
-                  >
-                    Get Started Today
-                  </a>
+                  <QuoteDialog 
+                    trigger={
+                      <button 
+                        className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-agr-blue hover:bg-blue-700"
+                      >
+                        Get Started Today
+                      </button>
+                    }
+                  />
                 </div>
               </div>
               <div className="rounded-lg overflow-hidden shadow-lg">
