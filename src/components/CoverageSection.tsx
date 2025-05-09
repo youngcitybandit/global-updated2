@@ -38,7 +38,7 @@ const CoverageSection = () => {
       id: 6,
       title: "Wellness",
       description: "Support for preventative care and wellness",
-      icon: <Stethoscope className="w-12 h-12 text-white" strokeWidth={1} fill="rgba(255, 255, 255, 0.2)" />
+      icon: <Stethoscope className="w-12 h-12 text-white" strokeWidth={1.5} />
     }
   ];
 
