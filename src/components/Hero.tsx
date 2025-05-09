@@ -115,7 +115,7 @@ const Hero = () => {
                       </SelectContent>
                     </Select>
                     <Button 
-                      className="bg-agr-brightTeal text-white whitespace-nowrap" 
+                      className="bg-agr-brightTeal text-agr-navy whitespace-nowrap" 
                       onClick={() => selectedState && setQuoteDialogOpen(true)}
                     >
                       Go
