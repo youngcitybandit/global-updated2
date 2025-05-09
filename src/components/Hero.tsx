@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Button } from "@/components/ui/button";
 import { Shield, Check, ChevronDown } from "lucide-react";
@@ -116,7 +115,7 @@ const Hero = () => {
                       </SelectContent>
                     </Select>
                     <Button 
-                      className="btn-primary bg-agr-navy text-white whitespace-nowrap" 
+                      className="bg-agr-brightTeal text-white whitespace-nowrap" 
                       onClick={() => selectedState && setQuoteDialogOpen(true)}
                     >
                       Go
