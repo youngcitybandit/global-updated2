@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
 import { Button } from "@/components/ui/button";
-import { Menu, X, Phone, ChevronDown } from "lucide-react";
+import { Menu, X, Phone, ChevronDown, LogIn } from "lucide-react";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -10,6 +10,12 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 import { cn } from "@/lib/utils";
 
 const Navbar = () => {
@@ -128,7 +134,23 @@ const Navbar = () => {
               <Phone size={18} className="mr-2 text-agr-blue" />
               1-877-828-9970
             </a>
-            <Button className="btn-primary ml-6 text-base font-medium">Get a Quote</Button>
+            <div className="ml-6">
+              <DropdownMenu>
+                <DropdownMenuTrigger className="flex items-center text-cyan-500 hover:text-cyan-600 font-medium">
+                  <LogIn className="mr-2 text-cyan-500" size={18} />
+                  Log In / Register
+                  <ChevronDown size={16} className="ml-1" />
+                </DropdownMenuTrigger>
+                <DropdownMenuContent align="end" className="bg-white">
+                  <DropdownMenuItem>
+                    <a href="/login" className="w-full">Log In</a>
+                  </DropdownMenuItem>
+                  <DropdownMenuItem>
+                    <a href="/register" className="w-full">Register</a>
+                  </DropdownMenuItem>
+                </DropdownMenuContent>
+              </DropdownMenu>
+            </div>
           </div>
 
           {/* Mobile Menu Button */}
@@ -183,7 +205,10 @@ const Navbar = () => {
               <Phone size={18} className="mr-2 text-agr-blue" />
               1-877-828-9970
             </a>
-            <Button className="btn-primary w-full text-base font-medium">Get a Quote</Button>
+            <div className="flex items-center text-cyan-500 hover:text-cyan-600 font-medium py-2">
+              <LogIn className="mr-2 text-cyan-500" size={18} />
+              <a href="/login">Log In / Register</a>
+            </div>
           </div>
         )}
       </div>
