@@ -28,8 +28,8 @@ const Employers = () => {
               </div>
               <div className="rounded-lg overflow-hidden shadow-lg">
                 <img 
-                  src="/lovable-uploads/c01aada3-7cc9-41e1-a1f2-f0d0374b2817.png" 
-                  alt="Professional employee smiling at business meeting" 
+                  src="/lovable-uploads/ca1681fd-0076-436c-a007-7ef7f9ca7872.png" 
+                  alt="Business professionals in a meeting" 
                   className="w-full h-auto object-cover"
                 />
               </div>
