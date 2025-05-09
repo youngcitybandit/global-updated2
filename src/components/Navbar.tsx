@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { Menu, X, Phone, ChevronDown, LogIn } from "lucide-react";
+import { Link, useLocation } from 'react-router-dom';
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -22,7 +23,8 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isEmployersOpen, setIsEmployersOpen] = useState(false);
   const [isBrokersOpen, setIsBrokersOpen] = useState(false);
-
+  const location = useLocation();
+  
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
@@ -33,6 +35,11 @@ const Navbar = () => {
 
   const toggleBrokers = () => {
     setIsBrokersOpen(!isBrokersOpen);
+  };
+  
+  // Helper function to determine if we need to use the homepage URL or just anchor
+  const getSectionUrl = (sectionId: string) => {
+    return location.pathname === '/' ? `#${sectionId}` : `/#${sectionId}`;
   };
 
   return (
@@ -105,10 +112,10 @@ const Navbar = () => {
                 </NavigationMenuItem>
                 
                 <NavigationMenuItem>
-                  <a href="#products" className="text-agr-darkgray hover:text-agr-blue text-base font-medium px-3 py-2">Solutions</a>
+                  <a href={getSectionUrl('products')} className="text-agr-darkgray hover:text-agr-blue text-base font-medium px-3 py-2">Solutions</a>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
-                  <a href="#coverage" className="text-agr-darkgray hover:text-agr-blue text-base font-medium px-3 py-2">Coverage</a>
+                  <a href={getSectionUrl('coverage')} className="text-agr-darkgray hover:text-agr-blue text-base font-medium px-3 py-2">Coverage</a>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
                   <a href="/about" className="text-agr-darkgray hover:text-agr-blue text-base font-medium px-3 py-2">About</a>
@@ -194,8 +201,8 @@ const Navbar = () => {
                 )}
               </div>
 
-              <a href="#products" className="block text-agr-darkgray hover:text-agr-blue text-base font-medium py-2">Solutions</a>
-              <a href="#coverage" className="block text-agr-darkgray hover:text-agr-blue text-base font-medium py-2">Coverage</a>
+              <a href={getSectionUrl('products')} className="block text-agr-darkgray hover:text-agr-blue text-base font-medium py-2">Solutions</a>
+              <a href={getSectionUrl('coverage')} className="block text-agr-darkgray hover:text-agr-blue text-base font-medium py-2">Coverage</a>
 
               {/* Replace About dropdown with direct link */}
               <a href="/about" className="block text-agr-darkgray hover:text-agr-blue text-base font-medium py-2">About</a>
