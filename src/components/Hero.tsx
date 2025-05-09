@@ -95,8 +95,8 @@ const Hero = () => {
                 className="w-full h-full object-cover rounded-lg"
               />
                 
-              {/* Bottom section - with blur */}
-              <div className="bg-transparent backdrop-blur-sm p-4 md:p-5 rounded-t-none rounded-b-lg w-full absolute bottom-0 left-0 right-0 z-10 border-t border-white/30">
+              {/* Bottom section - with light blur for better text visibility */}
+              <div className="bg-black/30 backdrop-blur-sm p-4 md:p-5 rounded-t-none rounded-b-lg w-full absolute bottom-0 left-0 right-0 z-10 border-t border-white/30">
                 <div className="flex flex-col sm:flex-row items-center justify-between">
                   <div className="mb-3 sm:mb-0">
                     <h3 className="text-lg font-semibold text-white">Ready to get protected?</h3>
@@ -104,7 +104,7 @@ const Hero = () => {
                   </div>
                   <div className="flex w-full sm:w-auto space-x-2">
                     <Select value={selectedState} onValueChange={setSelectedState}>
-                      <SelectTrigger className="w-full sm:w-[180px] border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-agr-blue">
+                      <SelectTrigger className="w-full sm:w-[180px] bg-white text-gray-800 border-0 rounded-md focus:outline-none focus:ring-2 focus:ring-agr-blue">
                         <SelectValue placeholder="Select a state" />
                       </SelectTrigger>
                       <SelectContent className="max-h-80 overflow-y-auto">
@@ -116,7 +116,7 @@ const Hero = () => {
                       </SelectContent>
                     </Select>
                     <Button 
-                      className="btn-primary whitespace-nowrap" 
+                      className="btn-primary bg-agr-navy text-white whitespace-nowrap" 
                       onClick={() => selectedState && setQuoteDialogOpen(true)}
                     >
                       Go
