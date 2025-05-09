@@ -20,9 +20,24 @@ import { cn } from "@/lib/utils";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isAboutOpen, setIsAboutOpen] = useState(false);
+  const [isEmployersOpen, setIsEmployersOpen] = useState(false);
+  const [isBrokersOpen, setIsBrokersOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
+  };
+
+  const toggleAbout = () => {
+    setIsAboutOpen(!isAboutOpen);
+  };
+
+  const toggleEmployers = () => {
+    setIsEmployersOpen(!isEmployersOpen);
+  };
+
+  const toggleBrokers = () => {
+    setIsBrokersOpen(!isBrokersOpen);
   };
 
   return (
@@ -166,40 +181,64 @@ const Navbar = () => {
             <nav className="flex flex-col space-y-3 mb-4">
               {/* Mobile Employers Dropdown */}
               <div>
-                <button onClick={() => {}} className="flex items-center justify-between w-full text-agr-darkgray text-base font-medium py-2">
+                <button 
+                  onClick={toggleEmployers} 
+                  className="flex items-center justify-between w-full text-agr-darkgray text-base font-medium py-2"
+                >
                   <span>Employers</span>
-                  <ChevronDown size={16} />
+                  <ChevronDown 
+                    size={16} 
+                    className={cn(isEmployersOpen ? "transform rotate-180 transition-transform" : "transition-transform")}
+                  />
                 </button>
-                <div className="pl-4 mt-1 space-y-1">
-                  <a href="/employers" className="block text-agr-darkgray hover:text-agr-blue text-base font-medium py-1">Overview</a>
-                  <a href="/employers/faqs" className="block text-agr-darkgray hover:text-agr-blue text-base font-medium py-1">FAQs</a>
-                </div>
+                {isEmployersOpen && (
+                  <div className="pl-4 mt-1 space-y-1">
+                    <a href="/employers" className="block text-agr-darkgray hover:text-agr-blue text-base font-medium py-1">Overview</a>
+                    <a href="/employers/faqs" className="block text-agr-darkgray hover:text-agr-blue text-base font-medium py-1">FAQs</a>
+                  </div>
+                )}
               </div>
 
               {/* Mobile Brokers Dropdown */}
               <div>
-                <button onClick={() => {}} className="flex items-center justify-between w-full text-agr-darkgray text-base font-medium py-2">
+                <button 
+                  onClick={toggleBrokers} 
+                  className="flex items-center justify-between w-full text-agr-darkgray text-base font-medium py-2"
+                >
                   <span>Brokers</span>
-                  <ChevronDown size={16} />
+                  <ChevronDown 
+                    size={16}
+                    className={cn(isBrokersOpen ? "transform rotate-180 transition-transform" : "transition-transform")}
+                  />
                 </button>
-                <div className="pl-4 mt-1 space-y-1">
-                  <a href="/brokers" className="block text-agr-darkgray hover:text-agr-blue text-base font-medium py-1">Overview</a>
-                  <a href="/brokers/faqs" className="block text-agr-darkgray hover:text-agr-blue text-base font-medium py-1">FAQs</a>
-                </div>
+                {isBrokersOpen && (
+                  <div className="pl-4 mt-1 space-y-1">
+                    <a href="/brokers" className="block text-agr-darkgray hover:text-agr-blue text-base font-medium py-1">Overview</a>
+                    <a href="/brokers/faqs" className="block text-agr-darkgray hover:text-agr-blue text-base font-medium py-1">FAQs</a>
+                  </div>
+                )}
               </div>
 
               <a href="#products" className="block text-agr-darkgray hover:text-agr-blue text-base font-medium py-2">Solutions</a>
               <a href="#coverage" className="block text-agr-darkgray hover:text-agr-blue text-base font-medium py-2">Coverage</a>
 
               <div>
-                <button onClick={() => {}} className="flex items-center justify-between w-full text-agr-darkgray text-base font-medium py-2">
+                <button 
+                  onClick={toggleAbout} 
+                  className="flex items-center justify-between w-full text-agr-darkgray text-base font-medium py-2"
+                >
                   <span>About</span>
-                  <ChevronDown size={16} />
+                  <ChevronDown 
+                    size={16}
+                    className={cn(isAboutOpen ? "transform rotate-180 transition-transform" : "transition-transform")}
+                  />
                 </button>
-                <div className="pl-4 mt-1 space-y-1">
-                  <a href="/about/company" className="block text-agr-darkgray hover:text-agr-blue text-base font-medium py-1">Company</a>
-                  <a href="/about/team" className="block text-agr-darkgray hover:text-agr-blue text-base font-medium py-1">Our Team</a>
-                </div>
+                {isAboutOpen && (
+                  <div className="pl-4 mt-1 space-y-1">
+                    <a href="/about/company" className="block text-agr-darkgray hover:text-agr-blue text-base font-medium py-1">Company</a>
+                    <a href="/about/team" className="block text-agr-darkgray hover:text-agr-blue text-base font-medium py-1">Our Team</a>
+                  </div>
+                )}
               </div>
             </nav>
             <a href="tel:1-877-828-9970" className="flex items-center text-agr-navy text-sm font-bold py-2 mb-3">
