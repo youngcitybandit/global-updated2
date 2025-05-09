@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Hospital, Ambulance, Stethoscope, Bandage, Bed, Mask } from "lucide-react";
+import { Hospital, Ambulance, Stethoscope, Bandage, Bed, Scissors } from "lucide-react";
 
 const CoverageSection = () => {
   const coverageItems = [
@@ -26,7 +26,7 @@ const CoverageSection = () => {
       id: 4,
       title: "Surgical",
       description: "Financial support for surgical procedures",
-      icon: <Mask className="w-12 h-12 text-white" />
+      icon: <Scissors className="w-12 h-12 text-white" />
     },
     {
       id: 5,
