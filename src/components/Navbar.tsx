@@ -44,13 +44,56 @@ const Navbar = () => {
           <nav className="hidden md:flex items-center space-x-6">
             <NavigationMenu>
               <NavigationMenuList>
-                {/* Regular Menu Items */}
+                {/* Employers Dropdown */}
                 <NavigationMenuItem>
-                  <a href="/employers" className="text-agr-darkgray hover:text-agr-blue text-base font-medium px-3 py-2">Employers</a>
+                  <NavigationMenuTrigger className="bg-transparent hover:bg-transparent text-agr-darkgray hover:text-agr-blue text-base font-medium">
+                    Employers
+                  </NavigationMenuTrigger>
+                  <NavigationMenuContent>
+                    <ul className="grid w-[200px] gap-3 p-4">
+                      <li>
+                        <NavigationMenuLink asChild>
+                          <a href="/employers" className="flex w-full items-center justify-start space-x-2 rounded-md p-2 text-base font-medium hover:bg-muted">
+                            <span>Overview</span>
+                          </a>
+                        </NavigationMenuLink>
+                      </li>
+                      <li>
+                        <NavigationMenuLink asChild>
+                          <a href="/employers/faqs" className="flex w-full items-center justify-start space-x-2 rounded-md p-2 text-base font-medium hover:bg-muted">
+                            <span>FAQs</span>
+                          </a>
+                        </NavigationMenuLink>
+                      </li>
+                    </ul>
+                  </NavigationMenuContent>
                 </NavigationMenuItem>
+
+                {/* Brokers Dropdown */}
                 <NavigationMenuItem>
-                  <a href="/brokers" className="text-agr-darkgray hover:text-agr-blue text-base font-medium px-3 py-2">Brokers</a>
+                  <NavigationMenuTrigger className="bg-transparent hover:bg-transparent text-agr-darkgray hover:text-agr-blue text-base font-medium">
+                    Brokers
+                  </NavigationMenuTrigger>
+                  <NavigationMenuContent>
+                    <ul className="grid w-[200px] gap-3 p-4">
+                      <li>
+                        <NavigationMenuLink asChild>
+                          <a href="/brokers" className="flex w-full items-center justify-start space-x-2 rounded-md p-2 text-base font-medium hover:bg-muted">
+                            <span>Overview</span>
+                          </a>
+                        </NavigationMenuLink>
+                      </li>
+                      <li>
+                        <NavigationMenuLink asChild>
+                          <a href="/brokers/faqs" className="flex w-full items-center justify-start space-x-2 rounded-md p-2 text-base font-medium hover:bg-muted">
+                            <span>FAQs</span>
+                          </a>
+                        </NavigationMenuLink>
+                      </li>
+                    </ul>
+                  </NavigationMenuContent>
                 </NavigationMenuItem>
+                
                 <NavigationMenuItem>
                   <a href="#products" className="text-agr-darkgray hover:text-agr-blue text-base font-medium px-3 py-2">Solutions</a>
                 </NavigationMenuItem>
@@ -121,8 +164,30 @@ const Navbar = () => {
         {isMenuOpen && (
           <div className="md:hidden py-4 border-t">
             <nav className="flex flex-col space-y-3 mb-4">
-              <a href="/employers" className="block text-agr-darkgray hover:text-agr-blue text-base font-medium py-2">Employers</a>
-              <a href="/brokers" className="block text-agr-darkgray hover:text-agr-blue text-base font-medium py-2">Brokers</a>
+              {/* Mobile Employers Dropdown */}
+              <div>
+                <button onClick={() => {}} className="flex items-center justify-between w-full text-agr-darkgray text-base font-medium py-2">
+                  <span>Employers</span>
+                  <ChevronDown size={16} />
+                </button>
+                <div className="pl-4 mt-1 space-y-1">
+                  <a href="/employers" className="block text-agr-darkgray hover:text-agr-blue text-base font-medium py-1">Overview</a>
+                  <a href="/employers/faqs" className="block text-agr-darkgray hover:text-agr-blue text-base font-medium py-1">FAQs</a>
+                </div>
+              </div>
+
+              {/* Mobile Brokers Dropdown */}
+              <div>
+                <button onClick={() => {}} className="flex items-center justify-between w-full text-agr-darkgray text-base font-medium py-2">
+                  <span>Brokers</span>
+                  <ChevronDown size={16} />
+                </button>
+                <div className="pl-4 mt-1 space-y-1">
+                  <a href="/brokers" className="block text-agr-darkgray hover:text-agr-blue text-base font-medium py-1">Overview</a>
+                  <a href="/brokers/faqs" className="block text-agr-darkgray hover:text-agr-blue text-base font-medium py-1">FAQs</a>
+                </div>
+              </div>
+
               <a href="#products" className="block text-agr-darkgray hover:text-agr-blue text-base font-medium py-2">Solutions</a>
               <a href="#coverage" className="block text-agr-darkgray hover:text-agr-blue text-base font-medium py-2">Coverage</a>
 
