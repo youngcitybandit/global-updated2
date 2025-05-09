@@ -64,7 +64,7 @@ const QuoteForm = () => {
             <div className="mt-8 text-center">
               <div className="flex items-center justify-center mb-4">
                 <Mail className="text-agr-blue mr-3" size={20} />
-                <span className="text-gray-600">Or email us at <a href="mailto:quotes@americanglobalere.com" className="text-agr-blue font-medium">quotes@americanglobalere.com</a></span>
+                <span className="text-gray-600">Or email us at <a href="mailto:info@agreinsure.com" className="text-agr-blue font-medium">info@agreinsure.com</a></span>
               </div>
               
               <p className="text-xs text-gray-500">
