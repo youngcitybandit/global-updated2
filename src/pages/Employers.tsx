@@ -12,11 +12,30 @@ const Employers = () => {
           <div className="max-w-4xl mx-auto">
             <h1 className="text-3xl md:text-5xl font-bold mb-8 text-agr-navy">Employer Solutions</h1>
             
-            <div className="prose lg:prose-lg mb-8">
-              <p className="text-lg text-agr-darkgray mb-6">
-                American Global Re offers comprehensive indemnity insurance coverage solutions designed specifically for employers looking to enhance their employee benefits package.
-              </p>
-              
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center mb-12">
+              <div>
+                <p className="text-lg text-agr-darkgray mb-6">
+                  American Global Re offers comprehensive indemnity insurance coverage solutions designed specifically for employers looking to enhance their employee benefits package.
+                </p>
+                <div className="mt-6">
+                  <a 
+                    href="#contact" 
+                    className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-agr-blue hover:bg-blue-700"
+                  >
+                    Get Started Today
+                  </a>
+                </div>
+              </div>
+              <div className="rounded-lg overflow-hidden shadow-lg">
+                <img 
+                  src="/lovable-uploads/c01aada3-7cc9-41e1-a1f2-f0d0374b2817.png" 
+                  alt="Professional employee smiling at business meeting" 
+                  className="w-full h-auto object-cover"
+                />
+              </div>
+            </div>
+            
+            <div className="prose lg:prose-lg mb-8">              
               <h2 className="text-2xl font-bold text-agr-blue mt-8 mb-4">Benefits for Employers</h2>
               
               <ul className="space-y-3 text-agr-darkgray">
