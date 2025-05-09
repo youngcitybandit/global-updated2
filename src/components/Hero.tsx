@@ -87,12 +87,15 @@ const Hero = () => {
             </div>
           </div>
           <div className="relative h-full min-h-[300px] md:min-h-[400px]">
-            <div className="absolute inset-0 bg-agr-navy/10 rounded-lg overflow-hidden flex items-center justify-center">
-              <div 
-                className="w-full h-full absolute inset-0 bg-cover bg-center opacity-40 rounded-lg"
-                style={{ backgroundImage: "url('/lovable-uploads/7cd812ae-3708-4ad7-90f6-71007ec36c73.png')" }}
-              ></div>
-              <div className="bg-transparent backdrop-blur-sm p-4 md:p-5 rounded-t-none rounded-b-lg w-full absolute bottom-0 left-0 right-0 z-10 border-t border-white/30">
+            <div className="absolute inset-0 bg-white rounded-lg overflow-hidden flex items-center justify-center">
+              <div className="w-full h-full absolute inset-0 rounded-lg">
+                <img
+                  src="/lovable-uploads/991c110a-da75-4835-9a08-2d91521629ca.png"
+                  alt="Smiling professionals"
+                  className="w-full h-full object-cover object-center rounded-lg"
+                />
+              </div>
+              <div className="bg-white p-4 md:p-5 rounded-t-none rounded-b-lg w-full absolute bottom-0 left-0 right-0 z-10 border-t border-white/30">
                 <div className="flex flex-col sm:flex-row items-center justify-between">
                   <div className="mb-3 sm:mb-0">
                     <h3 className="text-lg font-semibold text-agr-navy">Ready to get protected?</h3>
