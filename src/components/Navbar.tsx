@@ -135,8 +135,8 @@ const Navbar = () => {
             </a>
             <div className="ml-6">
               <DropdownMenu>
-                <DropdownMenuTrigger className="flex items-center text-agr-teal hover:text-agr-teal/80 font-medium">
-                  <LogIn className="mr-2 text-agr-teal" size={18} />
+                <DropdownMenuTrigger className="flex items-center text-agr-darkgray hover:text-agr-navy font-medium">
+                  <LogIn className="mr-2 text-agr-darkgray" size={18} />
                   Log In / Register
                   <ChevronDown size={16} className="ml-1" />
                 </DropdownMenuTrigger>
@@ -206,8 +206,8 @@ const Navbar = () => {
               <Phone size={18} className="mr-2 text-agr-blue" />
               1-877-828-9970
             </a>
-            <div className="flex items-center text-agr-teal hover:text-agr-teal/80 font-medium py-2">
-              <LogIn className="mr-2 text-agr-teal" size={18} />
+            <div className="flex items-center text-agr-darkgray hover:text-agr-navy font-medium py-2">
+              <LogIn className="mr-2 text-agr-darkgray" size={18} />
               <a href="/login">Log In / Register</a>
             </div>
           </div>
