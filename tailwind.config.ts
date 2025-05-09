@@ -64,7 +64,8 @@ export default {
           lightblue: '#E6F1FF',
           gray: '#F5F7FA',
           darkgray: '#333333',
-          teal: '#64EECD', // Adding the new teal accent color
+          teal: '#64EECD', // Previous teal color
+          brightTeal: '#00EDD1', // Adding the new bright teal color for login
         }
       },
       borderRadius: {
