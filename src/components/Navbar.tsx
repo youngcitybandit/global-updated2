@@ -116,27 +116,7 @@ const Navbar = () => {
                   <a href="#coverage" className="text-agr-darkgray hover:text-agr-blue text-base font-medium px-3 py-2">Coverage</a>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
-                  <NavigationMenuTrigger className="bg-transparent hover:bg-transparent text-agr-darkgray hover:text-agr-blue text-base font-medium">
-                    About
-                  </NavigationMenuTrigger>
-                  <NavigationMenuContent>
-                    <ul className="grid w-[200px] gap-3 p-4">
-                      <li>
-                        <NavigationMenuLink asChild>
-                          <a href="/about/company" className="flex w-full items-center justify-start space-x-2 rounded-md p-2 text-base font-medium hover:bg-muted">
-                            <span>Company</span>
-                          </a>
-                        </NavigationMenuLink>
-                      </li>
-                      <li>
-                        <NavigationMenuLink asChild>
-                          <a href="/about/team" className="flex w-full items-center justify-start space-x-2 rounded-md p-2 text-base font-medium hover:bg-muted">
-                            <span>Our Team</span>
-                          </a>
-                        </NavigationMenuLink>
-                      </li>
-                    </ul>
-                  </NavigationMenuContent>
+                  <a href="/about" className="text-agr-darkgray hover:text-agr-blue text-base font-medium px-3 py-2">About</a>
                 </NavigationMenuItem>
               </NavigationMenuList>
             </NavigationMenu>
@@ -222,24 +202,8 @@ const Navbar = () => {
               <a href="#products" className="block text-agr-darkgray hover:text-agr-blue text-base font-medium py-2">Solutions</a>
               <a href="#coverage" className="block text-agr-darkgray hover:text-agr-blue text-base font-medium py-2">Coverage</a>
 
-              <div>
-                <button 
-                  onClick={toggleAbout} 
-                  className="flex items-center justify-between w-full text-agr-darkgray text-base font-medium py-2"
-                >
-                  <span>About</span>
-                  <ChevronDown 
-                    size={16}
-                    className={cn(isAboutOpen ? "transform rotate-180 transition-transform" : "transition-transform")}
-                  />
-                </button>
-                {isAboutOpen && (
-                  <div className="pl-4 mt-1 space-y-1">
-                    <a href="/about/company" className="block text-agr-darkgray hover:text-agr-blue text-base font-medium py-1">Company</a>
-                    <a href="/about/team" className="block text-agr-darkgray hover:text-agr-blue text-base font-medium py-1">Our Team</a>
-                  </div>
-                )}
-              </div>
+              {/* Replace About dropdown with direct link */}
+              <a href="/about" className="block text-agr-darkgray hover:text-agr-blue text-base font-medium py-2">About</a>
             </nav>
             <a href="tel:1-877-828-9970" className="flex items-center text-agr-navy text-sm font-bold py-2 mb-3">
               <Phone size={18} className="mr-2 text-agr-blue" />
