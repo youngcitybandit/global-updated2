@@ -88,10 +88,14 @@ const Hero = () => {
           </div>
           <div className="relative h-full min-h-[300px] md:min-h-[400px]">
             <div className="absolute inset-0 bg-agr-navy/10 rounded-lg overflow-hidden flex items-center justify-center">
-              <div 
-                className="w-full h-full absolute inset-0 bg-cover bg-center opacity-40 rounded-lg"
-                style={{ backgroundImage: "url('/lovable-uploads/7cd812ae-3708-4ad7-90f6-71007ec36c73.png')" }}
-              ></div>
+              {/* Main image - no blur */}
+              <img 
+                src="/lovable-uploads/7cd812ae-3708-4ad7-90f6-71007ec36c73.png"
+                alt="Insurance coverage illustration"
+                className="w-full h-full object-cover rounded-lg"
+              />
+                
+              {/* Bottom section - with blur */}
               <div className="bg-transparent backdrop-blur-sm p-4 md:p-5 rounded-t-none rounded-b-lg w-full absolute bottom-0 left-0 right-0 z-10 border-t border-white/30">
                 <div className="flex flex-col sm:flex-row items-center justify-between">
                   <div className="mb-3 sm:mb-0">
