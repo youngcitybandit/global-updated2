@@ -1,6 +1,5 @@
 
 import React from 'react';
-import { X } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -44,11 +43,7 @@ const QuoteDialog = ({ trigger, defaultOpen, onOpenChange }: QuoteDialogProps) =
         <div className="bg-white p-6 sm:p-8 rounded-lg">
           <div className="flex justify-between items-center mb-6">
             <h2 className="text-xl font-bold text-agr-navy">Request a Free Quote</h2>
-            <DialogTrigger asChild>
-              <button className="text-gray-500 hover:text-gray-700">
-                <X className="h-5 w-5" />
-              </button>
-            </DialogTrigger>
+            {/* Removed the duplicate close button that was here */}
           </div>
           
           <form onSubmit={handleSubmit} className="space-y-4">
