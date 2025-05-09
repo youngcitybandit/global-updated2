@@ -35,7 +35,7 @@ const About = () => {
               <h2 className="text-2xl font-bold text-agr-blue mb-6">Our Mission</h2>
               <div className="prose lg:prose-lg">
                 <p className="text-lg text-agr-darkgray mb-6">
-                  We strive to be the most trusted partner in indemnity insurance by providing tailored solutions that protect our clients' financial interests while delivering superior customer service and support.
+                  Our mission is to empower employers with innovative, customized, indemnity insurance solutions that go beyond traditional coverage — delivering immediate cash benefits to employees while enhancing retention, satisfaction, and workforce stability in today's evolving healthcare landscape.
                 </p>
                 
                 <h3 className="text-xl font-bold text-agr-navy mt-8 mb-4">Our Values</h3>
