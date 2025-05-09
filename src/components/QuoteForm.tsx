@@ -2,6 +2,7 @@
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { Clock, Mail, Phone, ShieldCheck } from "lucide-react";
+import QuoteDialog from './QuoteDialog';
 
 const QuoteForm = () => {
   return (
@@ -52,61 +53,24 @@ const QuoteForm = () => {
           <div className="bg-white rounded-lg p-6 md:p-8 shadow-lg border border-gray-100">
             <h3 className="text-xl font-bold text-agr-navy mb-6">Request a Free Quote</h3>
             
-            <form className="space-y-4">
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div>
-                  <label htmlFor="firstName" className="block text-sm font-medium text-gray-700 mb-1">First Name</label>
-                  <input
-                    type="text"
-                    id="firstName"
-                    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-agr-blue"
-                  />
-                </div>
-                <div>
-                  <label htmlFor="lastName" className="block text-sm font-medium text-gray-700 mb-1">Last Name</label>
-                  <input
-                    type="text"
-                    id="lastName"
-                    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-agr-blue"
-                  />
-                </div>
+            <QuoteDialog 
+              trigger={
+                <Button type="button" className="btn-primary w-full bg-agr-navy hover:bg-agr-navy/80 text-white py-3 font-medium rounded-md">
+                  Get Your Free Quote
+                </Button>
+              }
+            />
+            
+            <div className="mt-8 text-center">
+              <div className="flex items-center justify-center mb-4">
+                <Mail className="text-agr-blue mr-3" size={20} />
+                <span className="text-gray-600">Or email us at <a href="mailto:quotes@americanglobalere.com" className="text-agr-blue font-medium">quotes@americanglobalere.com</a></span>
               </div>
               
-              <div>
-                <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
-                <input
-                  type="email"
-                  id="email"
-                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-agr-blue"
-                />
-              </div>
-              
-              <div>
-                <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-1">Phone Number</label>
-                <input
-                  type="tel"
-                  id="phone"
-                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-agr-blue"
-                />
-              </div>
-              
-              <div>
-                <label htmlFor="zipCode" className="block text-sm font-medium text-gray-700 mb-1">ZIP Code</label>
-                <input
-                  type="text"
-                  id="zipCode"
-                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-agr-blue"
-                />
-              </div>
-              
-              <div className="pt-2">
-                <Button type="submit" className="btn-primary w-full">Get Your Free Quote</Button>
-              </div>
-              
-              <p className="text-xs text-gray-500 text-center mt-4">
+              <p className="text-xs text-gray-500">
                 By submitting, you agree to our <a href="#" className="text-agr-blue underline">privacy policy</a> and consent to be contacted regarding insurance.
               </p>
-            </form>
+            </div>
           </div>
         </div>
       </div>

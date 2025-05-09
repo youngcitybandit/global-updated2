@@ -9,10 +9,12 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import QuoteDialog from './QuoteDialog';
 
 const Hero = () => {
   const [selectedState, setSelectedState] = useState<string>("");
   const [headingIndex, setHeadingIndex] = useState(0);
+  const [quoteDialogOpen, setQuoteDialogOpen] = useState(false);
   
   const headings = [
     "Managing Risk for Employer Benefits",
@@ -27,6 +29,11 @@ const Hero = () => {
     
     return () => clearInterval(interval);
   }, []);
+
+  const handleStateSelect = (state: string) => {
+    setSelectedState(state);
+    setQuoteDialogOpen(true);
+  };
 
   const states = [
     "Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut", 
@@ -73,7 +80,9 @@ const Hero = () => {
             </div>
             
             <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
-              <Button className="btn-primary">Get Your Free Quote</Button>
+              <QuoteDialog 
+                trigger={<Button className="btn-primary">Get Your Free Quote</Button>}
+              />
               <Button variant="outline" className="btn-outline">Learn More</Button>
             </div>
           </div>
@@ -102,7 +111,12 @@ const Hero = () => {
                         ))}
                       </SelectContent>
                     </Select>
-                    <Button className="btn-primary whitespace-nowrap">Go</Button>
+                    <Button 
+                      className="btn-primary whitespace-nowrap" 
+                      onClick={() => selectedState && setQuoteDialogOpen(true)}
+                    >
+                      Go
+                    </Button>
                   </div>
                 </div>
               </div>
@@ -110,6 +124,12 @@ const Hero = () => {
           </div>
         </div>
       </div>
+      
+      {/* Render the dialog without a trigger but controlled by state */}
+      <QuoteDialog 
+        defaultOpen={quoteDialogOpen} 
+        onOpenChange={setQuoteDialogOpen} 
+      />
     </section>
   );
 };
