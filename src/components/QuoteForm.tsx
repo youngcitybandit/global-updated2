@@ -22,7 +22,7 @@ const QuoteForm = () => {
                 </div>
                 <div>
                   <h3 className="font-semibold text-agr-navy mb-1">Trusted Protection</h3>
-                  <p className="text-gray-600">American GlobaleRe has been providing reliable insurance coverage for over 30 years.</p>
+                  <p className="text-gray-600">American Global has been providing reliable insurance coverage for over 30 years.</p>
                 </div>
               </div>
               
