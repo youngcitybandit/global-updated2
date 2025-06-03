@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
@@ -17,7 +16,7 @@ const Employers = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center mb-12">
               <div>
                 <p className="text-lg text-agr-darkgray mb-6">
-                  American Global Re offers comprehensive indemnity insurance coverage solutions designed specifically for employers looking to enhance their employee benefits package.
+                  American Global offers comprehensive indemnity insurance coverage solutions designed specifically for employers looking to enhance their employee benefits package.
                 </p>
                 <div className="mt-6">
                   <QuoteDialog 
@@ -51,7 +50,7 @@ const Employers = () => {
                 <li>Simple administration and implementation process</li>
               </ul>
               
-              <h2 className="text-2xl font-bold text-agr-blue mt-8 mb-4">Why Choose American Global Re?</h2>
+              <h2 className="text-2xl font-bold text-agr-blue mt-8 mb-4">Why Choose American Global?</h2>
               
               <p className="text-lg text-agr-darkgray mb-6">
                 Our employer solutions are designed to complement your existing healthcare benefits while providing additional financial security for your employees. With flexible plan designs and competitive pricing, we make it easy to enhance your benefits package.

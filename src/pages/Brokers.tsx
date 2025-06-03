@@ -15,7 +15,7 @@ const Brokers = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center mb-12">
               <div>
                 <p className="text-lg text-agr-darkgray mb-6">
-                  American Global Re provides dedicated support and innovative solutions for insurance brokers looking to expand their product offerings with our suite of indemnity insurance products.
+                  American Global provides dedicated support and innovative solutions for insurance brokers looking to expand their product offerings with our suite of indemnity insurance products.
                 </p>
               </div>
               <div className="rounded-lg overflow-hidden shadow-lg">
@@ -41,11 +41,11 @@ const Brokers = () => {
               <h2 className="text-2xl font-bold text-agr-blue mt-8 mb-4">Our Broker Program</h2>
               
               <p className="text-lg text-agr-darkgray mb-6">
-                When you partner with American Global Re, you gain access to our extensive experience in the indemnity insurance market. Our broker program is designed to help you grow your business by offering valuable products that meet the evolving needs of your clients.
+                When you partner with American Global, you gain access to our extensive experience in the indemnity insurance market. Our broker program is designed to help you grow your business by offering valuable products that meet the evolving needs of your clients.
               </p>
               
               <p className="text-lg text-agr-darkgray mb-6">
-                Contact our broker relations team today to learn more about becoming an appointed broker with American Global Re.
+                Contact our broker relations team today to learn more about becoming an appointed broker with American Global.
               </p>
             </div>
           </div>

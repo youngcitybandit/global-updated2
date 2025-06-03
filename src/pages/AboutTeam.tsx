@@ -14,7 +14,7 @@ const AboutTeam = () => {
             
             <div className="prose lg:prose-lg mb-8">
               <p className="text-lg text-agr-darkgray mb-6">
-                American Global Re employs talented professionals across various specialties, including:
+                American Global employs talented professionals across various specialties, including:
               </p>
               
               <ul className="space-y-3 text-agr-darkgray mb-8">

@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Facebook, Twitter, Instagram, Linkedin, Mail, Phone } from 'lucide-react';
 import { AspectRatio } from "@/components/ui/aspect-ratio";
@@ -14,7 +13,7 @@ const Footer = () => {
                 <AspectRatio ratio={3/1}>
                   <img 
                     src="/lovable-uploads/cae8698b-566c-4e49-82b7-60bfed41fa2d.png" 
-                    alt="AmericanGlobalRe" 
+                    alt="American Global" 
                     className="object-contain w-full h-full brightness-0 invert"
                   />
                 </AspectRatio>

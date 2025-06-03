@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
@@ -17,11 +16,11 @@ const About = () => {
               <h2 className="text-2xl font-bold text-agr-blue mb-6">Our Company</h2>
               <div className="prose lg:prose-lg">
                 <p className="text-lg text-agr-darkgray mb-6">
-                  American Global Re is a leading provider of indemnity insurance solutions, committed to delivering exceptional service and innovative coverage options to our clients across the United States.
+                  American Global is a leading provider of indemnity insurance solutions, committed to delivering exceptional service and innovative coverage options to our clients across the United States.
                 </p>
                 
                 <p className="text-lg text-agr-darkgray mb-6">
-                  Founded in 2005, American Global Re has grown from a regional provider to a national leader in indemnity insurance. With a focus on innovation and customer service, we've built a reputation for reliability and expertise in the industry.
+                  Founded in 2005, American Global has grown from a regional provider to a national leader in indemnity insurance. With a focus on innovation and customer service, we've built a reputation for reliability and expertise in the industry.
                 </p>
                 
                 <p className="text-lg text-agr-darkgray mb-6">
