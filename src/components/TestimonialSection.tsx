@@ -8,14 +8,14 @@ const TestimonialSection = () => {
       id: 1,
       name: "Sarah Johnson",
       location: "Dallas, TX",
-      quote: "American GlobaleRe provided excellent service when I needed it most. Their team helped me find affordable coverage that perfectly suits my needs.",
+      quote: "American Global provided excellent service when I needed it most. Their team helped me find affordable coverage that perfectly suits my needs.",
       rating: 5
     },
     {
       id: 2,
       name: "Michael Thompson",
       location: "Chicago, IL",
-      quote: "I've been with American GlobaleRe for over 10 years now. Their customer service is outstanding and they've always been there when I needed to file a claim.",
+      quote: "I've been with American Global for over 10 years now. Their customer service is outstanding and they've always been there when I needed to file a claim.",
       rating: 5
     },
     {
@@ -33,7 +33,7 @@ const TestimonialSection = () => {
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-agr-navy mb-4">What Our Customers Say</h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Don't just take our word for it. Here's what our satisfied customers have to say about American GlobaleRe.
+            Don't just take our word for it. Here's what our satisfied customers have to say about American Global.
           </p>
         </div>
 
