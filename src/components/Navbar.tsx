@@ -51,7 +51,7 @@ const Navbar = () => {
             <a href="/" className="flex items-center">
               <img 
                 src="/lovable-uploads/ed580215-06f6-49c1-915b-56d58ac5487a.png" 
-                alt="American Global Re Logo" 
+                alt="AmericanGlobalRe Logo" 
                 className="h-8 md:h-10"
               />
             </a>

@@ -14,7 +14,7 @@ const Footer = () => {
                 <AspectRatio ratio={3/1}>
                   <img 
                     src="/lovable-uploads/cae8698b-566c-4e49-82b7-60bfed41fa2d.png" 
-                    alt="American Global Re" 
+                    alt="AmericanGlobalRe" 
                     className="object-contain w-full h-full brightness-0 invert"
                   />
                 </AspectRatio>
